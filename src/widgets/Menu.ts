@@ -7,7 +7,7 @@ import * as css from './styles/Menu.m.css';
 const factory = create();
 
 export default factory(function Menu() {
-	return w(Toolbar, { heading: 'My Dojo App!', collapseWidth: 600 }, [
+	return w(Toolbar, { heading: 'Business Hustle', collapseWidth: 600 }, [
 		w(
 			Link,
 			{
@@ -24,7 +24,7 @@ export default factory(function Menu() {
 				classes: [css.link],
 				activeClasses: [css.selected]
 			},
-			['About']
+			['Terms & Conditions']
 		),
 		w(
 			Link,
@@ -33,7 +33,7 @@ export default factory(function Menu() {
 				classes: [css.link],
 				activeClasses: [css.selected]
 			},
-			['Profile']
+			['Privacy Policy']
 		)
 	]);
 });
